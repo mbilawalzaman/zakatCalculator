@@ -137,7 +137,7 @@ const ZakatCalculator = () => {
       <div className="text-black mt-10 font-bold">
         Total Wealth: <span className="amount">PKR {totalWealth}</span>
       </div>
-      <div className="text-black mt-10 font-bold">
+      <div className="text-black mt-4 font-bold">
         Zakat Payable: <span className="amount">PKR {zakatPayable}</span>
       </div>
     </div>
