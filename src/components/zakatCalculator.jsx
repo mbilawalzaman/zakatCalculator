@@ -42,7 +42,7 @@ const ZakatCalculator = () => {
     setZakatPayable(0);
   };
 
-  const isAnyValueEntered = gold || silver || land || cash || nisabValue; // Check if any field has a value
+  const isAnyValueEntered = gold || silver || land || cash && nisabValue; // Check if any field has a value
 
   return (
     <div className="bg-gray-100 p-6 rounded-lg shadow-md">
