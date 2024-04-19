@@ -57,6 +57,7 @@ const ZakatCalculator = () => {
           className="w-full p-2 border rounded"
           onChange={(e) => updateNisabValue(e.target.value)}
           min="0"
+          required
         />
       </div>
       <div className="input-group">
