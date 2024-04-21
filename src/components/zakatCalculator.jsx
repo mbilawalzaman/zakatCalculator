@@ -23,7 +23,7 @@ const ZakatCalculator = () => {
     const totalWealth = numericGold + numericSilver + numericLand + numericCash;
 
     if (totalWealth >= nisabValue) {
-      setZakatPayable((totalWealth * 0.025).toFixed(2));
+      setZakatPayable((totalWealth * 0.025).toFixed(0));
     } else {
       setZakatPayable(0);
       toast.error("Not eligible for Zakat");
@@ -42,7 +42,7 @@ const ZakatCalculator = () => {
     setZakatPayable(0);
   };
 
-  const isAnyValueEntered = (nisabValue && (gold || silver || land || cash)); // Check if any field has a value
+  const isAnyValueEntered = nisabValue && (gold || silver || land || cash); // Check if any field has a value
 
   return (
     <div className="bg-gray-100 p-6 rounded-lg shadow-md">
@@ -62,7 +62,7 @@ const ZakatCalculator = () => {
       </div>
       <div className="input-group">
         <label htmlFor="gold" className="label-style">
-          Gold (grams):
+          Gold (Amount):
         </label>
         <input
           id="gold"
@@ -76,7 +76,7 @@ const ZakatCalculator = () => {
       </div>
       <div className="input-group">
         <label htmlFor="silver" className="label-style">
-          Silver (grams):
+          Silver (Amount):
         </label>
         <input
           id="silver"
@@ -90,7 +90,7 @@ const ZakatCalculator = () => {
       </div>
       <div className="input-group">
         <label htmlFor="land" className="label-style">
-          Land (amount):
+          Land (Amount):
         </label>
         <input
           id="land"
