@@ -140,6 +140,16 @@ const ZakatCalculator = () => {
       <div className="text-black mt-4 font-bold">
         Zakat Payable: <span className="amount">PKR {zakatPayable}</span>
       </div>
+      <div className="text-black text-left mt-5">
+        <h2 className="underline underline-offset-1 font-bold">
+          Nisaab Amount
+        </h2>
+        <p>Please enter Nisaab amount accordingly.</p>
+        <p>
+          7.5 tola (87.48 grams) of gold. <br />
+          52.5 tola (612.36 grams) of silver.
+        </p>
+      </div>
     </div>
   );
 };
